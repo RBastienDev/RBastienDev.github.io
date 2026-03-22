@@ -1,0 +1,153 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+  .silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  .silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+
+  #grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  grid-template-areas: 
+    "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
+    "abt abt abt abt abt abt abt abt abt abt abt abt"
+    "ski ski ski ski ski ski ski ski ski ski ski ski"
+    "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
+  }
+
+  header {
+  grid-area: hdr;
+  width: 100%;
+  height: 200px;
+  color:#fff;
+  background: url('../assets/images/codeBKG.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid #fff;
+  }
+
+    #logo {
+    position:absolute;
+    top:10px;
+    left:40px;
+    }
+
+    header img {
+    height: 180px;
+    width:180px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    }
+
+    header h1{
+    text-align: center;
+    padding-top:40px;
+    font-size: 5em;
+    text-shadow: 5px 5px 5px #999;
+    }
+
+  #about {
+  display:grid;
+  grid-area: abt;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  background: #000;
+  border-bottom: 1px solid #fff;
+  font-size: 2em;
+  color:#fff;
+  height:700px;
+  }
+
+    #description{
+    background:#333;
+    border-radius:16px;
+    padding:25px;
+    margin:25px;
+    }
+
+    #description h2{
+    text-align: center;
+    }
+
+    #description p {
+    padding-left:20px;
+    padding-top:25px;
+    }
+
+    #aboutIMG {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    align-items: center;
+    }
+
+    #aboutIMG img{
+    height:500px;
+    border-radius: 16px;
+    width:100%;
+    }
+
+  #skills {
+  grid-area: ski;
+  height:800px;
+  width:100%;
+  background: #000;
+  border-bottom: 1px solid #fff;
+  color:#fff;
+  text-align: center;
+  }
+
+    #skillGrid{
+    padding-top:20px;
+    display: grid;
+    grid-area: ski;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2;
+    gap:20px;
+    margin:20px;
+  }
+
+    #skills h2{
+    text-align: center;
+    font-size: 3em;
+    padding-top:20px;
+  }
+
+    #skills img{
+    height:100px;
+  }
+  
+    #skillGrid div{
+    width:100%;
+    height:300px;
+    background:#333;
+    text-align: center;
+    font-size: 3em;
+    align-content: center;
+    border-radius:16px;
+  }
+
+  footer {
+  display:grid;
+  grid-area: ftr;
+  height:100px;
+  width:100%;
+  background: #000;
+  color:#fff;
+  text-align: center;
+  padding-top: 20px;
+  }
